@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P-Diddy foi preso por varias coisas</title>
+    <title>Samara perfeita</title>
 </head>
 <body>
    
     <script>
-        document.write("<h2>" +document.title+"</h2>");        
+        document.write("<h2>"+document.title+"</h2>"); 
     </script>
-    <button type="button" onclick="alert('matou Michael Jackson!')">clique para saber mais! </button>
+    <p id="paragrafo">Samara fofa</p>
+    <script>
+        function mFuncao() {
+             var x = document.getElementById("paragrafo");
+             x.innerHTML="Você é gay";
+        }
+       </script>
+       
+        <script>
+        function trocaImagem() {
+            var elemento=document.getElementById("MyImage");
+            if (elemento.src.match("bulbon")) {
+                    elemento.src="pic_bulboff.gif";
+            } else {
+                    elemento.src="pic_bulbon.gif";
+            }
+        }
+    </script>
+    <p>
+        <img id="MyImage" onclick="trocaImagem()"
+        src="pic_bulboff.gif" width="100" height="180">
+    </p>
+       
+       <button type="button" onclick="mFuncao();"> me aperta
+       </button>
+    <button type="button" onclick="alert('eu te amo mãe!')">Clique Aqui</button>
 </body>
 </html>
